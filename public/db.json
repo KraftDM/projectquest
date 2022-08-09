@@ -1,0 +1,87 @@
+{
+  "chapters": [
+    {
+      "chapterId": "",
+      "title": "",
+      "index": 0,
+      "materials": [
+        {
+          "materialId": "",
+          "type": "info",
+          "title": "Info-1",
+          "index": 0,
+          "text": "text-info-1"
+        },
+        {
+          "materialId": "",
+          "type": "info",
+          "title": "Info-2",
+          "index": 1,
+          "text": "text-info-2"
+        },
+        {
+          "materialId": "",
+          "type": "info",
+          "title": "Info-3",
+          "index": 2,
+          "text": "text-info-3"
+        },
+        {
+          "materialId": "",
+          "type": "test",
+          "title": "Test-1",
+          "index": 3,
+          "questions": [
+            {"questionId": "",
+              "title": "Question-1",
+              "type": "radio",
+              "answers": [
+                {
+                  "answerId": "",
+                  "text": "answer-1",
+                  "right": false
+                },
+                {
+                  "answerId": "",
+                  "text": "answer-2",
+                  "right": true
+                },
+                {
+                  "answerId": "",
+                  "text": "answer-3",
+                  "right": false
+                }
+              ]
+            },
+            {"questionId": "",
+              "title": "Question-2",
+              "type": "checkbox",
+              "answers": [
+                {
+                  "answerId": "",
+                  "text": "answer-1",
+                  "right": true
+                },
+                {
+                  "answerId": "",
+                  "text": "answer-2",
+                  "right": true
+                },
+                {
+                  "answerId": "",
+                  "text": "answer-3",
+                  "right": false
+                }
+              ]
+            },
+            {"questionId": "",
+              "title": "Question-3",
+              "type": "text",
+              "answer": "answer"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

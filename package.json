@@ -1,0 +1,27 @@
+{
+  "title": "projectquest",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./app"
+  },
+  "dependencies": {
+    "async": "^3.1.0",
+    "connect-mongo": "^3.1.2",
+    "cookie-parser": "~1.4.4",
+    "cron": "^1.7.2",
+    "crypto": "^1.0.1",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "ejs-locals": "^1.0.2",
+    "errorhandler": "^1.5.1",
+    "express": "~4.16.1",
+    "express-session": "^1.17.0",
+    "http-errors": "~1.6.3",
+    "mongodb": "^3.3.4",
+    "mongoose": "^5.7.10",
+    "morgan": "~1.9.1",
+    "nconf": "^0.10.0",
+    "winston": "~2.4.4"
+  }
+}

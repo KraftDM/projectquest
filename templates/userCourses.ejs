@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' href='/css/style.css'/>
+    <link rel="stylesheet" href="/css/userCourses.css">
+    <% if (privilege == 'edit') { %>
+        <script src="/scripts/editUserCourses.js" defer></script>
+    <% } %>
+    <script src="/scripts/viewUserCourses.js" defer></script>
+    <script src="/scripts/common.js.js" defe></script>
+</head>
+<body>
+
+<div class="header">
+    <div class="content-container">
+        <div class="header-content">
+            <div class="logo">
+                <a href="">
+                    <span class="logo-name">Quest</span>
+                </a>
+            </div>
+
+            <div class="flex-center">
+                <div class="header-course-ava cursor-pointer"></div>
+                <div class="hide-input-under-line">
+                    <a href="">
+                        <div class="my-quests">Мои квесты</div>
+                    </a>
+                    <div class="flex-center" style="width: 100%">
+                        <div class="input-under-line"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-center">
+
+
+                <a href="" id="create-course" aria-label="Make a quest" class="relative  flex-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none"
+                         stroke="#0B77CE" stroke-width="1" stroke-linecap="butt" stroke-linejoin="round">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                    <div id="create-course" class="make-quest">Создать квест</div>
+                </a>
+
+                <nav id="nav">
+                    <div class="user-menu">
+                        <a id="ctx-menu" aria-label="Ur Photo" class="relative flex-center cursor-pointer">
+                            <div class="name-of-user "><%=user.username%></div>
+                            <div class="header-user-ava"></div>
+                            <ul class="second">
+                                <li><a href="#">Мой профиль</a></li>
+                                <li><a href="#">Уведомления</a></li>
+                                <li><a href="#">Расписание</a></li>
+                                <li><a href="#">Выйти</a></li>
+                            </ul>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="flex-center">
+    <div class="content-container">
+
+        <div class="grid">
+
+            <div class="left-panel">
+                <div class="continue-ed-article">Продолжить прохождение</div>
+                <div class="continue-line1"></div>
+                <a href="">
+                    <div class="horizontal-box">
+                        <div class="mini-img"></div>
+                        <div class="mini-name-quest">Программирование на Python</div>
+                    </div>
+                </a>
+                <div class="continue-cr-article">Продолжить создание</div>
+                <div class="continue-line2"></div>
+                <a class="change" href="">
+                    <div class="horizontal-box">
+                        <div class="no-cr-questes">У вас еще нет созданных квестов</div>
+                        <div class="try-to-create">Попробуйте создать сейчас</div>
+                    </div>
+                </a>
+                <div class="continue-cr-article">Добавить новый квест</div>
+                <div class="continue-line2"></div>
+                <div class="send-a-code">
+                    <input id="input-hashed-link" class="add-quest" type="text" placeholder="Введите код">
+                    <div class="send-button" id="button-hashed-link">
+                        <svg class="svg-send" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                             viewBox="0 0 24 24" fill="none" stroke=" #3c45e2" stroke-width="1.5"
+                             stroke-linecap="butt" stroke-linejoin="round">
+                            <path d="M5 12h13M12 5l7 7-7 7"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flex-column">
+
+                <div class="col-2-3-1">
+
+                    <div class="switching">
+                        <div class="tab cursor-pointer usn" id="tab-active">Активные квесты</div>
+                        <div class="tab cursor-pointer usn" id="tab-create">Созданные квесты</div>
+                        <div class="tab-choice" id="tab-choice"></div>
+                    </div>
+                    <div class="choice-line1"></div>
+
+                </div>
+
+                <div class="col-2-3-2 ">
+                    <div class="module" id="courses-box">
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

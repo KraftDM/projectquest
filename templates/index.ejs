@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' href='/css/style.css'/>
+    <link rel='stylesheet' href='/css/mainpage.css'/>
+    <link rel='stylesheet' href='/css/userCourses.css'/>
+    <script src="/scripts/common.js" defer></script>
+</head>
+<body>
+
+    <div class="header">
+        <div class="content-container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="">
+                        <span class="logo-name">Quest</span>
+                    </a>
+                </div>
+
+                <div class="flex-center">
+                    <div class="header-course-ava cursor-pointer"></div>
+                    <div class="hide-input-under-line">
+
+                        <div class="flex-center" style="width: 100%">
+                            <div class="input-under-line"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex-center">
+
+                    <div class="user-menu">
+                        <% if(authorized) { %>
+                        <a id="ctx-menu" aria-label="Ur Photo" class="relative flex-center cursor-pointer" href="/users/<%=user._id%>/courses">
+                            <div class="name-of-user "><%=user.username%></div>
+                            <div class="header-user-ava"></div>
+                            <ul class="second">
+                                <li><a href="#">Мой профиль</a></li>
+                                <li><a href="#">Уведомления</a></li>
+                                <li><a href="#">Расписание</a></li>
+                                <li><a href="#">Выйти</a></li>
+                            </ul>
+                        </a>
+                        <% } else {%>
+                            <a aria-label="Ur Photo" class="relative flex-center" href="\login">
+                                <div class="login">Войти</div>
+                            </a>
+                        <% } %>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <div class="flex-center">
+        <div class="first-block">
+            <img id="main-image" src="/images/1.png">
+            <h1 class="headline-1">Создавай</h1>
+            <h3 id="Mini-first-headline">Прояви креативность и упакуй свои знания<br>в обучающий квест</h3>
+            <a href="" id="Go-to-the-constructor" class="Button">Перейти в конструктор</a>
+
+
+            <h1 class="headline-2">Учись</h1>
+            <h3 id="Mini-second-headline">Покупай уже готовые квесты любой тематики<br>или заказывай у профессионалов</h3>
+            <a href="" id="Go-to-the-shop" class="Button">Перейти в каталог</a>
+        </div>
+    </div>
+
+
+    <div class="Second-block">
+        <div class="Decor">
+            <div id="Line1"></div>
+            <div id="Line3"></div>
+        </div>
+
+        <h2 id="Headline-features">Особенности квестов</h2>
+
+        <div class="Choices">
+            <h4 id="For1">Для тех, кто учится</h4>
+            <h4 id="For2">Для тех, кто создает</h4>
+            <div id="Line-of-choice"></div>
+        </div>
+
+
+        <div class="wrapper">
+            <input type="radio" name="point" id="slide1" checked>
+            <input type="radio" name="point" id="slide2">
+            <input type="radio" name="point" id="slide3">
+            <div class="controls">
+                <label for="slide1" id="sl1">1</label>
+                <label for="slide2" id="sl2">2</label>
+                <label for="slide3" id="sl3">3</label>
+            </div>
+            <div class="slider">
+                <div class="slides slide1"></div>
+                <div class="slides slide2"></div>
+                <div class="slides slide3"></div>
+            </div>
+
+        </div>
+
+        <div id="Line-vertical"></div>
+
+        <h4 id="FirstArticle">Учись в любое время</h4>
+        <h4 id="SecondArticle">Будь всегда в обучении</h4>
+        <h4 id="ThirdArticle">Соревнуйся с другими</h4>
+        <h5 id="FirstText">Мобильная версия Quest предоставляет все возможности по покупке и прохождению квестов</h5>
+        <h5 id="SecondText">В Quest тесты могут появиться в любое время, в любом виде и быть ограниченными любым количеством времени</h5>
+        <h5 id="ThirdText">Каждый ваш успех не останется замеченным! В Quest количество набранных вами баллов формирует рейтинг по текущему квесту</h5>
+    </div>
+
+
+</body>
+</html>

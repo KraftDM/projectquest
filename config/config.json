@@ -1,0 +1,21 @@
+{
+  "port" : 3000,
+  "mongoose": {
+    "uri": "mongodb://localhost/projectquest",
+    "options": {
+      "useNewUrlParser": true,
+      "useUnifiedTopology": true,
+      "useCreateIndex": true,
+      "useFindAndModify": false
+    }
+  },
+  "session": {
+    "secret": "KillerIsJim",
+    "key": "sid",
+    "cookie": {
+      "path": "/",
+      "httpOnly": true,
+      "maxAge": 1209600000
+    }
+  }
+}

@@ -1,0 +1,161 @@
+@import url('https://rsms.me/inter/inter.css');
+@import url('https://fonts.googleapis.com/css?family=Calistoga&display=swap');
+
+body {
+    font: 14px 'Inter', "Lucida Grande", Helvetica, Arial, sans-serif;
+    color: #333;
+    margin: 0;
+}
+
+/*
+    HEADER
+*/
+
+.header {
+    width: 100%;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+    padding-top: 10px;
+    z-index: 100;
+}
+
+.header-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-container {
+    min-width: 1240px;
+    margin: 0 auto;
+}
+
+.header-user-ava {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #acacac;
+    margin-left: 8px;
+}
+
+.notification-number {
+    height: 18px;
+    width: 18px;
+    line-height: 18px;
+    background: #3c45e2;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: -3px;
+    bottom: -3px;
+    font-size: 10px;
+}
+
+
+/*
+
+*/
+
+
+a {
+    color: #00B7FF;
+}
+
+.error-msg {
+    color: red;
+    opacity: 0;
+}
+
+.show {
+    opacity: 1;
+}
+
+/*
+    DISPLAY AND POSITION
+*/
+
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+/*
+    INPUT
+*/
+
+.input {
+    color: #333;
+    background-color: transparent;
+}
+
+.hide-input {
+    border: none;
+}
+
+.hide-input:focus {
+    outline-width: 0;
+    border-width: 0;
+}
+
+/*
+    BUTTONS
+*/
+
+.rect-button {
+    height: 32px;
+    padding: 0 19.2px;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 0 1.4px #5f6368;
+    border-radius: 4px;
+    margin: 0 10px;
+}
+
+/*border: 1.2px solid #5f6368;*/
+
+.rect-button-bold {
+    color: #5f6368;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/*
+    CURSOR
+*/
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.usn{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}

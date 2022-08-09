@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Конструктор квеста</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/map-constructor.css">
+    <script src="/scripts/autosize.js" defer></script>
+    <script src="/scripts/courseConstructorMain.js" defer></script>
+    <script src="/scripts/courseConstructorCards.js" defer></script>
+    <script src="/scripts/courseConstructorPanel.js" defer></script>
+</head>
+<body>
+
+<div class="header relative">
+    <div class="content-container">
+        <div class="header-content">
+
+            <div class="flex-center">
+                <div class="header-course-ava cursor-pointer"></div>
+                <div class="hide-input-under-line">
+                    <input class="header-course-name input hide-input" value="<%= course.title %>">
+                    <div class="flex-center" style="width: 100%">
+                        <div class="input-under-line"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="notifications">
+                <!--img id="Bell" src="bell%20(9).svg"-->
+            </div>
+
+            <div class="flex-center">
+                <div class="constructor-btn cursor-pointer flex-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19.2" height="19.2" viewBox="0 0 24 24" fill="none"
+                         stroke="#5f6368" stroke-width="1.95" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                    </svg>
+                </div>
+                <div class="constructor-btn cursor-pointer flex-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19.2" height="19.2" viewBox="0 0 24 24" fill="none"
+                         stroke="#5f6368" stroke-width="1.92" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                    </svg>
+                </div>
+                <div class="rect-button rect-button-bold flex-center" id="run-curse"><div class="cursor-pointer" style="width: 100%; line-height: 38px">Запустить</div>
+                    <div class="hash-link-parent"><div><div class="constructor-btn cursor-pointer flex-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#5f6368" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V6M5 12l7-7 7 7"/></svg>
+                            </div></div><div class="hashe-link"></div></div></div>
+                <!--div id="username"><%= user.username %></div-->
+                <div class="constructor-btn cursor-pointer flex-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19.2" height="19.2" viewBox="0 0 24 24" fill="#5f6368"
+                         stroke="#5f6368" stroke-width="1.95" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="1"></circle>
+                        <circle cx="12" cy="5" r="1"></circle>
+                        <circle cx="12" cy="19" r="1"></circle>
+                    </svg>
+                </div>
+                <a aria-label="Ur Photo" class="relative">
+                    <div class="header-user-ava  cursor-pointer"></div>
+                    <!--div class="notification-number flex-center cursor-pointer">2</div-->
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="curse-constructor">
+    <div class="curse-constructor-container">
+
+        <div class="panel">
+            <div class="panel-container">
+                <div class="panel-tabs"></div>
+                <div class="list-box" id="curse-list"></div>
+            </div>
+        </div>
+
+        <div class="relative">
+            <div class="cards" id="cards">
+                <div class="cards-container" id="cards-container">
+
+
+                    <!--div class="card">
+
+                        <div class="card-bottom-sector flex">
+
+                            <div class="questions flex-column">
+
+                                <div class="card-question">
+
+
+                                        <div class="card-question-tool flex-center">
+                                            <div class="constructor-btn cursor-pointer flex-center"></div>
+                                            <div class="constructor-btn cursor-pointer flex-center"><svg xmlns="http://www.w3.org/2000/svg" width="19.2" height="19.2" viewBox="0 0 24 24" fill="none" stroke="#5f6368" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div-->
+
+                </div>
+            </div>
+            <!--div class="blind-up"></div>
+            <div class="blind-down"></div-->
+        </div>
+    </div>
+    <ul class="context-menu" id="context-menu"></ul>
+</div>
+
+<div class="footer"></div>
+
+</body>
+</html>

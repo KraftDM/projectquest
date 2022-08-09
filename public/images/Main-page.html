@@ -1,0 +1,848 @@
+<html>
+    
+    
+    
+<head>
+    
+    <title>Main page</title>
+    <meta charset="utf-8">
+    
+    <style type="text/css">
+        
+       body {
+    font: 16px Roboto;
+    color: #333;
+    margin: 0;
+           background-color: #F7F5F3;
+    
+}
+    
+  .logo {
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 42px;
+text-align: center;
+text-decoration: none;
+color: #0F1126;
+        }    
+
+
+
+.header {
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+    padding-top: 0px;
+    top: 0;
+
+}
+        
+
+.header-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-container {
+    min-width: 1240px;
+    margin: 0 auto;
+
+}
+        
+.login {    
+    margin-left: 58px;
+    align-items: center;
+    vertical-align: middle;
+}
+
+        
+
+a {
+    color: #3c45e2;
+    text-decoration: none;
+}
+
+.error-msg {
+    color: red;
+    opacity: 0;
+}
+
+.show {
+    opacity: 1;
+}
+
+/*
+    DISPLAY AND POSITION
+*/
+
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+           
+
+.flex-between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+        .first-block{
+            background-color: #F7F5F3;
+        }
+
+        #main-image {
+            
+            position: absolute;
+            width: 1388px;
+            height: 925px;
+            left: calc(50% - 1388px/2 - 29px);
+            top: -172px;
+            }
+        
+        h1{
+            
+            position: absolute;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 60px;
+            line-height: 20px;
+            /* identical to box height, or 33% */
+
+            color: #0F1126;
+                }
+
+
+
+        .headline-2 {            
+            left: calc(50% - 170px/2 + 470px);
+            top: 167px;
+        }
+        
+          .headline-1 {
+             left: calc(50% - 275px/2 - 417.5px);
+             top: 188px;
+        }
+        
+        
+        h3 {
+            
+            position: absolute;
+            width: 393px;
+            height: 40px;
+            
+
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 20px;
+            /* or 111% */
+            
+        }
+        
+        #Mini-second-headline {
+            
+            text-align: right;
+            left: calc(50% - 393px/2 + 359.5px);
+            top: 230px;
+            color: #979797;
+        }
+        
+        
+        #Mini-first-headline {
+            text-align: left;
+            left: calc(50% - 372px/2 - 371px);
+            top: 250px;
+            color: #979797;
+        }
+        
+        
+        .Button {
+            position: absolute;  
+            border: 1px solid #2E43EA;
+            box-sizing: border-box;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 20px;
+            color:#2E43EA;
+        }
+
+        .Button:hover{
+            background: #2E43EA;
+            border: 0px;
+            color:white;
+        }
+        
+
+         #Go-to-the-constructor {
+            width: 255px;
+            height: 60px;
+            left: calc(50% - 255px/2 - 427.5px);
+            top: 489px;
+        }
+
+
+        #Go-to-the-shop {
+            width: 216px;
+            height: 60px;
+            left: calc(50% - 216px/2 + 447px);
+            top: 446px;
+        }
+        
+        
+        #Text-in-the-button {
+
+            color: #2E43EA;
+
+            width: 255px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        
+        }
+
+
+        .Second-block {
+            
+            position: absolute;
+            height: 690px;
+            left: 0%;
+            right: -0.29%;
+            top: 750px;
+
+            background: #FFFFFF;
+        }
+
+
+        #Line1
+        {
+            position: absolute;
+            z-index: 1;
+            height: 1px;
+            left: 0;
+            right: 0;
+            top: 204.5px;
+
+            background: #D3D9DE;
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+
+        }
+
+        #Line3 
+        {
+            position: absolute;
+            height: 1px;
+            left: 0%;
+            right: 0%;
+            top: 690px;
+
+            background: #D3D9DE;
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+        }
+
+
+        h2  {
+            
+            position: absolute;
+            width: 383px;
+            height: 44px;
+
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 42px;
+            text-align: center;
+
+            color: #0F1126;
+            }
+        
+        
+        #Headline-features {
+            left: calc(50% - 383px/2 + 93.5px);
+            top: 75px;
+        }
+
+
+
+        h4{
+            
+            position: absolute;
+            width: 193px;
+            height: 18.04px;
+
+
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 23px;
+
+            color: #0F1126;
+
+        }
+        
+        
+            * {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+    
+    .wrapper > input {
+	display: none;
+}
+    
+    .wrapper {
+        z-index: 2;
+	      position: absolute;
+            width: 285.04px;
+            height: 575.87px;
+            left: calc(50% - 255px/2 - 427.5px);
+            top: 50px;
+}
+    
+    
+    .slider {
+	background-color: #FFFFFF;
+	height: inherit;
+	overflow: hidden;
+	position: relative;
+	width: inherit;
+
+}
+    
+    
+    .slides {
+	height: inherit;
+	position: absolute;
+	width: inherit;
+}
+
+    .slide1 { background-image: url(iPhoneX1.png); background-size: 100%;
+            background-position: center;}
+.slide2 { background-image: url(iPhoneX2.png); background-size: 100%;
+            background-position: center;}
+.slide3 { background-image: url(iPhoneX1.png); background-size: 100%;
+            background-position: center;}
+    
+        
+    .controls {
+	position: absolute;
+    width: 11px;
+    height: 20px; 
+    box-sizing: border-box;
+    display: flex;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: normal;
+
+    color: #2E43EA;
+}
+    
+        
+         #sl1 {
+        position: absolute;
+             display: flex;
+            align-items: center;
+            text-align: center;       
+            justify-content: center; 
+            width: 34px;
+            height: 34.07px;
+            right: calc(100% + 34px/2 - 532px);
+            top: 188.62px;
+            border: 1px solid #2E43EA;
+             box-sizing: border-box;
+             border-radius: 25px;
+
+            background: #FFFFFF;
+    }
+    
+    #sl2 {
+
+            position: absolute;
+            display: flex;
+            align-items: center;
+            text-align: center;       
+            justify-content: center; 
+            width: 34px;
+             height: 34.07px;
+            right: calc(100% + 34px/2 - 532px);
+             top: 313px;
+
+             background: #FFFFFF;
+             border: 1px solid #2E43EA;
+             box-sizing: border-box;
+             border-radius: 25px;
+    }
+
+    #sl3 {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            text-align: center;       
+            justify-content: center; 
+            width: 34px;
+             height: 34.07px;
+            right: calc(100% + 34px/2 - 532px);
+             top: 450px;
+
+             background: #FFFFFF;
+             border: 1px solid #2E43EA;
+             box-sizing: border-box;
+             border-radius: 25px;
+        
+        }
+    
+    
+    .wrapper label {
+	cursor: pointer;
+	display: inline-block;
+	height: 8px;
+	margin: 25px 12px 0 16px;
+	position: relative;
+	width: 8px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-transition: background ease-in-out .5s;
+	-moz-transition: background ease-in-out .5s;
+	-o-transition: background ease-in-out .5s;
+	transition: background ease-in-out .5s;
+}
+    
+
+.wrapper label:hover, 
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3) {
+    color:#FFFFFF;
+	background: #2E43EA;
+}
+
+    
+    .slides {
+	height: inherit;
+	opacity: 0;
+	position: absolute;
+	width: inherit;
+	z-index: 0;
+	-webkit-transform: scale(4);
+	-moz-transform: scale(4);
+	-o-transform: scale(4);
+	transform: scale(1);
+	-webkit-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	-moz-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	-o-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+}
+
+    
+#slide1:checked ~ .slider > .slide1,
+#slide2:checked ~ .slider > .slide2,
+#slide3:checked ~ .slider > .slide3 {
+	opacity: 1;
+	z-index: 1;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+
+  
+        #For1 {
+             left: calc(50% - 189px/2 + 4.5px);
+            top: 155.41px;
+        }
+
+
+        #For2 {
+             left: calc(50% - 195px/2 + 245.5px);
+            top: 155.41px;
+        }
+
+        
+        #Line-of-choice {
+            position: absolute;
+            width: 180px;
+            z-index: 2;
+            height: 4.01px;
+            left: calc(50% - 179px/2 - 1px);
+            top: 201px;
+
+            background: #2E43EA;
+            transform: matrix(1, 0, 0, -1, 0, 0);
+        }
+    
+        
+
+        #line2 {
+            position: absolute;
+            width: 451.05px;
+            height: 1px;
+            left: calc(50% - 675.05px/2 + 40px);
+            top: 1290.66px;
+
+            background: #D3D9DE;
+            transform: rotate(90deg);
+        }
+
+
+        #FirstArticle {
+            width: 569px;
+
+            left: calc(50% - 569px/2 + 274.5px);
+            top: 270px;
+
+        }
+
+        #SecondArticle {
+            width: 569px;
+            left: calc(50% - 569px/2 + 274.5px);
+            top: 393.9px;
+
+        }
+
+        
+        #ThirdArticle {
+            
+            width: 569px;
+            left: calc(50% - 569px/2 + 274.5px);
+            top: 533.22px;
+
+        }
+
+
+        h5{
+            position: absolute;
+            width: 504px;
+            height: 38.08px;
+
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 21px;
+
+            color: #979797;
+        }
+        
+        
+        #FirstText {
+            left: calc(50% - 504px/2 + 242px);
+            top: 310.71px;
+
+        }
+        
+        
+        #SecondText {
+            left: calc(50% - 504px/2 + 242px);
+            top: 433.99px;
+
+        }
+
+        
+          #ThirdText {
+            left: calc(50% - 504px/2 + 242px);
+            top: 573.99px;
+
+        }
+
+        
+        #Popul {
+            left: calc(50% - 355px/2 - 391.5px);
+            top: 1551px;
+        }
+
+
+        #line4 {
+            position: absolute;
+            height: 1px;
+            left: 0%;
+            right: 0%;
+            top: 1706px;
+
+            background: #D3D9DE;
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+        }
+
+        #cheese2 {
+            position: absolute;
+            width: 109px;
+            height: 4px;
+            left: calc(50% - 109px/2 - 499.5px);
+            top: 1703px;
+
+            background: #2E43EA;
+            transform: matrix(1, 0, 0, -1, 0, 0);
+        }
+        
+        
+        
+
+        
+        #logo-f {
+            position: absolute;
+            width: 78px;
+            height: 19px;
+            left: calc(50% - 78px/2 - 515px);
+            top:36%;
+
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 20px;
+            /* or 67% */
+            letter-spacing: -1px;
+                
+            color: #FFFFFF;
+        }
+        
+        
+        #about-f {
+            position: absolute;
+            width: 47px;
+            height: 20px;
+            left: calc(50% - 47px/2 - 394.5px);
+            top: 38%;
+
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 20px;
+/* identical to box height, or 111% */
+            text-align: center;
+
+            color: #FFFFFF;
+
+        }
+        
+        
+        #politic-f {
+            position: absolute;
+            width: 223px;
+            height: 20px;
+            left: calc(50% - 217px/2 - 206.5px);
+            top: 38%;
+
+
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 20px;
+            /* identical to box height, or 111% */
+            text-align: center;
+
+            color: #FFFFFF;
+
+            
+        }
+        
+        
+        #contacts-f {
+           position: absolute;
+            width: 83px;
+            height: 20px;
+            left: calc(50% - 83px/2 - 0.5px);
+            top: 38%;
+
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 20px;
+/* identical to box height, or 111% */
+            text-align: center;
+
+            color: #FFFFFF;
+ 
+        }
+
+        #vk {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            left: calc(50% - 34.6px/2 + 538.3px);
+            top: 30%;
+
+            fill:#FFFFFF
+        
+        }
+
+        #fc {
+            position: absolute;
+            width: 26px;
+            height: 30px;
+            left: calc(50% - 15.88px/2 + 494.77px);
+            top: 30%;
+
+            fill:#FFFFFF
+        }
+        
+        
+        #more-q {
+          
+            left: calc(50% - 165px/2 - 9.5px);
+            top: 2430px;
+            color: #2E43EA;
+        }
+        
+
+    </style>
+    
+    
+    </head>
+
+
+    
+    
+    <body>
+        
+<div class="header"> 
+        <div class="content-container"> 
+                <div class="header-content"> 
+      <div class="logo">
+        <a href="">
+          <span class="logo-name">Quest</span>
+        </a>
+      </div>
+                    
+                        <div class="flex-center"> 
+                                <div class="header-course-ava cursor-pointer"></div> 
+                                        <div class="hide-input-under-line"> 
+                                            
+                                                    <div class="flex-center" style="width: 100%"> 
+<div class="input-under-line"></div> 
+</div> 
+</div> 
+</div> 
+
+<div class="flex-center"> 
+
+<div class="user-menu">
+<a aria-label="Ur Photo" class="relative flex-center" href="\login"> 
+<div class="login">Войти</div> 
+    </div>
+</a>
+</div> 
+</div> 
+       
+ </div>  
+        </div>
+        </div>
+    
+        <div class="flex-center"> 
+        <div class="first-block">
+            <img id="main-image" src="1.png">
+                <h1 class="headline-1">Создавай</h1>
+            <h3 id="Mini-first-headline">Прояви креативность и упакуй свои знания<br>в обучающий квест</h3>
+            <a href="" id="Go-to-the-constructor" class="Button">Перейти в конструктор</a>
+
+            
+            <h1 class="headline-2">Учись</h1>
+            <h3 id="Mini-second-headline">Покупай уже готовые квесты любой тематики<br>или заказывай у профессионалов</h3>
+            <a href="" id="Go-to-the-shop" class="Button">Перейти в каталог</a>
+        </div>
+        </div>
+        
+        
+        <div class="Second-block">
+            <div class="Decor">
+                <div id="Line1"></div>
+                <div id="Line3"></div>
+            </div>
+            
+            <h2 id="Headline-features">Особенности квестов</h2>
+            
+            <div class="Choices">
+                <h4 id="For1">Для тех, кто учится</h4>
+                <h4 id="For2">Для тех, кто создает</h4>
+                <div id="Line-of-choice"></div>
+            </div>
+            
+            
+            <div class="wrapper">
+                <input type="radio" name="point" id="slide1" checked>
+                <input type="radio" name="point" id="slide2">
+                <input type="radio" name="point" id="slide3">
+                <div class="controls">
+		              <label for="slide1" id="sl1">1</label>
+		              <label for="slide2" id="sl2">2</label>
+		              <label for="slide3" id="sl3">3</label>
+	           </div>
+	           <div class="slider">
+		              <div class="slides slide1"></div>
+		              <div class="slides slide2"></div>
+		              <div class="slides slide3"></div>
+	           </div>	
+	
+            </div>
+            
+            <div id="Line-vertical"></div>
+
+            <h4 id="FirstArticle">Учись в любое время</h4>
+            <h4 id="SecondArticle">Будь всегда в обучении</h4>        
+            <h4 id="ThirdArticle">Соревнуйся с другими</h4>
+            <h5 id="FirstText">Мобильная версия Quest предоставляет все возможности по покупке и прохождению квестов</h5>
+            <h5 id="SecondText">В Quest тесты могут появиться в любое время, в любом виде и быть ограниченными любым количеством времени</h5>        
+            <h5 id="ThirdText">Каждый ваш успех не останется замеченным! В Quest количество набранных вами баллов формирует рейтинг по текущему квесту</h5>  
+        </div>
+
+    
+    </body>
+
+
+
+
+
+
+</html>
